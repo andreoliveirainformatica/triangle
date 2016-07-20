@@ -1,4 +1,4 @@
-package br.com.b2w.challenge.exception;
+package br.com.b2w.challenge.core.triangle.exception;
 
 /**
  * Created by andre.oliveira on 19/07/2016.
