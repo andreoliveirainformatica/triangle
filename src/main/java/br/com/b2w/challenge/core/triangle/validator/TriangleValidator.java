@@ -10,9 +10,9 @@ public class TriangleValidator {
     public void validate(final int [][] array) {
 
         if (array == null) {
-            throw new InvalidFormatTriangleException("array is not initialized");
+            throw new RuntimeException("array is not initialized");
         } else if (array.length < 1) {
-            throw new InvalidFormatTriangleException("array is empty");
+            throw new RuntimeException("array is empty");
        }
 
         for (int index = 0; index < array.length; index++) {

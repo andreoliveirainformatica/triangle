@@ -44,10 +44,10 @@ public class Triangle {
 
 
     public int getMaximumTotalBottomTopRecursive() {
-        return  sumElemementsWithNextRow(this.array.clone(), this.array.length-1);
+        return  sumElementsWithNextRow(this.array.clone(), this.array.length-1);
     }
 
-    private int sumElemementsWithNextRow(int[][] arraySum, Integer index) {
+    private int sumElementsWithNextRow(int[][] arraySum, Integer index) {
         if (index == 0) {
             return arraySum[0][0];
         }
@@ -58,7 +58,7 @@ public class Triangle {
         for (int i = 0; i < nextRow.length; i++) {
             nextRow[i] += Math.max(row[i], row[i + 1]);
         }
-        return sumElemementsWithNextRow(arraySum, index-1);
+        return sumElementsWithNextRow(arraySum, index-1);
 
     }
 }
